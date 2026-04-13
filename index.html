@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche | Offical Website</title>
+    <!-- Font Awesome CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <!-- BootStrap CDN -->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- CSS Link -->
+<link rel="stylesheet" href="/Css/index.css">
+
+</head>
+<body>
+<video id="top" class="vid1" src="/Images/Main Video.mp4" autoplay muted playsinline loop></video>
+
+<div class="overlay">
+  <div class="head">
+    <i class="fa-solid fa-bars menu"></i>
+    <h1 class="Porsche">PORSCHE</h1>
+    <i class="fa-solid fa-user"></i>
+  </div>
+  <div class="text">
+    <h1>The New<br>Porsche 911 <br>Turbo S</h1>
+  </div>
+  <div  class="discover">
+    <button>Discover more</button>
+  </div>
+  <div class="video-controls">
+    <button id="pauseBtn">
+    <i class="fa-solid fa-pause" id="icon"></i>
+    </button>
+  </div>
+<div class="para">
+  <p>Fuel consumption combined: 12.3 – 12.0 l/100 km; CO_2 emissions combined: 278 – 271 g/km (WLTP)</p>
+</div>
+</div>
+<!-- Box Styling Start -->
+
+<div class="Box">
+<div class="card-col">
+  <div class="card1">
+    <img src="/Images/card1 img.jpg" alt="">
+    <div class="overlay"></div>
+    <div class="card-text">
+    <h5>Panamera 4 E-Hybrid.</h5>
+    <i class="fa-solid fa-angle-right"></i>
+    </div>
+  </div>
+  <div class="card2">
+    <img src="/Images/card2 img.jpg" alt="">
+    <div class="overlay"></div>
+    <div class="card-text">
+    <h5>911 Carrera.</h5>
+     <i class="fa-solid fa-angle-right" id="arrow2"></i>
+    </div>
+  </div>
+  <div class="card3">
+    <img src="/Images/card3 img.jpg" alt="">
+    <div class="overlay"></div>
+    <div class="card-text">
+    <h5>Taycan.</h5>
+     <i class="fa-solid fa-angle-right" id="arrow3"></i>
+    </div>
+  </div>  
+  <div class="scroll" id="scroll"></div>
+</div>
+<div class="text-below-card">
+  <p>Panamera 4 E-Hybrid: Fuel consumption (weighted) combined (model range): 3.8 – 3.0 l/100 km, Electric energy consumption <br>  (weighted) combined (model range): 18.4 – 17.9 kWh/100 km | 911 Carrera: Fuel consumption combined  (model range): <br> 10.4  – 9.9 l/100 km, CO₂-emissions combined (model range): 238  – 226 g/km | Taycan: Electric <br> energy consumption combined (model range): 19.4 – 16.7 kWh/100 km, CO₂ <br>-emissions combined (model range): 0 g/km</p>
+</div>
+<div class="journey-box" id="trans-box">
+  <h1>Your Porsche journey starts now.</h1>
+</div>
+<div>
+  <div class="row1">
+    <div class="card-911" id="por-911" onmouseover="expand('c1')" onmouseleave="resetcards('c1')">
+    <img class="pic-911" src="/Images/Tumbnails/911-tuumbnail.jpg" alt="">
+    <video class="shot-911" src="/Images/card-911-shots/911 shots.mp4" muted autoplay loop playsinline></video>
+    <div class="card-overlay">
+      <img src="/Images/font overlay/911.png" alt="">
+      <div class="type">
+        <h6>Gasoline</h6>
+      </div>
+      <p>Iconic Sports Car With Rear Engine: 2 Doors, 2+2 Seats</p>
+      <i class="fa-solid fa-angle-right" class="arrow"></i>
+    </div>
+    </div>
+    <div class="card-718" id="718" onmouseover="expand('c2')" onmouseleave="resetcards('c2')">
+    <img class="pic-718" src="/Images/Tumbnails/718 tumbnail.jpg" alt="">
+    <video class="shot-718" src="/Images/card-718-shots/718 shots.mp4" muted autoplay loop playsinline></video>
+    <div class="card-overlay">
+        <img src="/Images/font overlay/718.png" alt="">
+        <div class="type">
+        <h6>Gasoline</h6>
+      </div>
+      <p>Precise mid-engine sports car: 2 doors, 2 seats.</p>
+      <i class="fa-solid fa-angle-right" class="arrow"></i>
+    </div>
+
+    </div>
+  
+    <div class="card-taycan" onmouseover="expand('c3')" onmouseleave="resetcards('c3')">
+    <img class="pic-taycan" src="/Images/Tumbnails/taycan tumbnail.jpg" alt="">
+    <video class="shot-taycan" src="/Images/Card-taycan-shots/Taycan Shots.mp4" muted autoplay loop playsinline></video>
+    <div class="card-overlay">
+      <img class="overlay-font" src="/Images/font overlay/tayan.png" alt="">
+      <div class="type">
+        <h6>Gasoline</h6>
+      </div>
+      <p>Electric sports car: 4 doors, 4/5 seats.</p>
+      <i class="fa-solid fa-angle-right" class="arrow"></i>
+    </div>
+    </div>
+    <div class="card-panamera" onmouseover="expand('c4')" onmouseleave="resetcards('c4')">
+       <img class="pic-panamera" src="/Images/Tumbnails/panamera tumbnail.jpg" alt="">
+    <video class="shot-panamera" src="/Images/panamera shots/Panamera Shots.mp4" muted autoplay loop playsinline></video>
+    <div class="card-overlay">
+      <img class="overlay-font" src="/Images/font overlay/panamera.png" alt="">
+      <div class="type">
+        <h6>Hybrid</h6>
+      </div>
+      
+      <p>Luxury sedan with a high level of comfort: 4 doors, 4/5 seats.</p>
+      <i class="fa-solid fa-angle-right" class="arrow"></i>
+    </div>
+    </div>
+    <div class="card-macan" onmouseover="expand('c5')" onmouseleave="resetcards('c5')">
+     <img class="pic-macan" src="/Images/Tumbnails/macan tumbnail.jpg" alt="">
+    <video class="shot-macan" src="/Images/macan shots/Macan Shots.mp4" muted autoplay loop playsinline></video>
+    <div class="card-overlay">
+      <img class="overlay-font" src="/Images/font overlay/macan.png" alt="">
+      <div class="type">
+        <h6>Electric</h6>
+      </div>
+      <p>Sporty compact SUV: 4 doors, 5 seats.</p>
+      <i class="fa-solid fa-angle-right" class="arrow"></i>
+    </div>
+    </div>
+    <div class="card-cane" onmouseover="expand('c6')" onmouseleave="resetcards('c6')">
+     <img class="pic-cane" src="/Images/Tumbnails/carera tumbnail.jpg" alt="">
+    <video class="shot-cane" src="/Images/cayenne shots/Cayne Shots.mp4" muted autoplay loop playsinline></video>
+    <div class="card-overlay">
+      <img class="overlay-font" src="/Images/font overlay/cayenne.png" alt="">
+      <div class="type">
+        <h6>Electric</h6>
+      </div>
+      <p>Versatile SUV: 4 doors, up to 5 seats.</p>
+      <i class="fa-solid fa-angle-right" class="arrow"></i>
+    </div>
+    </div>
+
+    </div>
+</div>
+<div class="discover-section">
+   <h1 class="discover-heading">Discover</h1>
+</div>
+<div class="footer-card-col">
+
+ <div class="footer-card1">
+   <img src="/Images/card4 img.jpg" alt="">
+    <div class="overlay"></div>
+    <div class="card-text">
+    <h5>Porsche Experince.</h5>
+    <i class="fa-solid fa-angle-right"></i>
+    </div>
+ </div>
+ <div class="footer-card2">
+<img src="/Images/card5 img.jpg" alt="">
+    <div class="overlay"></div>
+    <div class="card-text">
+    <h5>E-Performance.</h5>
+    <i class="fa-solid fa-angle-right"></i>
+ </div>
+</div>
+ <div class="footer-card3">
+<img src="/Images/card 6 img.jpg" alt="">
+    <div class="overlay"></div>
+    <div class="card-text">
+    <h5>Porsche Finder.</h5>
+    <i class="fa-solid fa-angle-right"></i>
+ </div>
+
+  </div> 
+  </div>
+ <div class="footer">
+  <div class="scroll">
+    <a href="#top">
+    <i class="fa-solid fa-circle-arrow-up"></i>
+    </a>
+    <h5>Scroll Up.</h5>
+  </div>
+  <div class="footer-row">
+    <div class="part-1">
+      <h5>Location & Contacts</h5>
+      <ul>
+       <a href=""> <li>Get in touch</li></a>
+      </ul>
+    </div>
+    <div class="part-2">
+        <h5>Company</h5>
+      <ul>
+       <a href=""> <li>Investor Relation</li></a>
+       <a href=""> <li>Career</li></a>
+       <a href=""> <li>Global Partnership Council</li></a>
+       <a href=""> <li>Compliance</li></a>
+       <a href=""> <li>Newsroom & Press</li></a>
+      <a href=""> <li>Information Security</li></a>
+      </ul>
+    </div>
+    <div class="part-3">
+        <h5>Porsche On the Web</h5>
+      <ul>
+       <a href=""> <li>Porsche Homepage</li></a>
+       <a href=""> <li>Porsche Configurator</li></a>
+       <a href=""> <li>Porsche Connect</li></a>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-para">
+    <p>If the values are given as ranges, these do not relate to a single, individual vehicle and do not constitute part of the offer. They are intended solely as a means of comparing different vehicle models and refer to the product portfolio that is available on the German market. Extra features and accessories (attachments, tyre formats etc.) can change relevant vehicle parameters such as weight, rolling resistance and aerodynamics and, in addition to weather and traffic conditions, as well as individual handling, can affect the fuel consumption, energy consumption, CO₂ emissions, range and performance values of a car.</p>
+  </div>
+  <div class="footer-logo">
+    <h1 class="Porsche">PORSCHE</h1>
+  </div>
+  
+ </div>
+
+
+
+    
+
+
+
+
+
+
+    <script src="/Script/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,530 @@
+
+@font-face {
+    font-family: 'Porsche';
+    src: url('/Css/911 Porscha.ttf') format('truetype');
+    font-weight: 300; 
+}
+@font-face {
+    font-family: 'Porsche-nexttt';
+    src: url('/Css/porsche-next-tt.ttf') format('truetype');
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.vid1 {
+    width: 100%;
+    height: 590px;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 590px;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0) 40%,
+        rgba(0, 0, 0, 0.2) 90%
+    );
+
+    box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
+}
+
+.overlay .head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 15px 30px;
+}
+
+.Porsche {
+    color: white;
+    font-family: 'Porsche', sans-serif;
+    font-weight: 300; 
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.fa-bars {
+    position: absolute;
+    left: 35px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.fa-user{
+    position: absolute;
+    right: 35px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.text{
+    color: white;
+    font-family: 'Porsche-nexttt';
+    margin-left: 60px;
+    margin-top: 70px;
+}
+.text h1{
+    font-weight: 400;
+    font-size: 60px;
+}
+.discover{
+    margin-left: 70px;
+    margin-top: 10px;
+}
+.discover button{
+    width: 160px;
+    height: 62px;
+    border-radius: 4px;
+    border: none;
+    outline:none;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-color: white;
+    font-family: 'porsche-nexttt';
+    font-size: 18px;
+}
+.discover button:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(12px); 
+    border: 1px solid rgba(255, 255, 255, 0.7); 
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.video-controls {
+    position: absolute;
+    bottom: 30px;
+    right: 30px; /* Ya inset-inline-end: 30px; */
+    z-index: 10;
+}
+
+#pauseBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 10;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+#pauseBtn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+.para{
+    text-align: center;
+    margin-top: 119px;
+    color: white;
+    font-family: 'porsche-nexttt';
+}
+/* Video Styling done till here */
+.Box{
+    width: 100%;
+    height: 3900px;
+    background-color: #FFFFFF;
+}
+.card-col{
+    display: flex;
+    justify-content: center;
+    gap:25px;
+    margin-top: -7px;
+    padding-top: 100px;
+}
+.card1, .card2, .card3{
+    width: 22%;
+    height: 210px;
+    border-radius: 7px;
+    gap: 4px;
+    position: relative;
+    overflow: hidden;
+}
+.card1 img, .card2 img, .card3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+.card-text{
+    position: absolute;
+    bottom: 15px;      
+    left: 15px;        
+    z-index: 2;        
+    color: white; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+     left: 0;           /* Left 0 karein */
+    right: 0;          /* Right 0 karein taaki width 100% ho jaye */
+    padding: 0 20px;   /* Sides se thori space dene ke liye */
+}
+.card-text h5{
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: 'porsche-nexttt';
+    font-weight: bold;   
+}
+.card-text i{
+    margin-bottom: 10px;
+    font-size: 22px;
+    margin-right: -40px;
+    font-size: 22px;
+    margin: 0;
+    top: 0px;
+}
+/* #arrow2{
+    margin-left: 90px;
+    
+}
+#arrow3{
+    margin-left: 140px;
+} */
+.card1:hover img, .card2:hover img, .card3:hover img{
+    transform: scale(1.1);
+}
+
+#scroll{
+    background-color: black;
+    color: white;
+}
+.text-below-card p{
+text-align: center;
+justify-content: center;
+margin-top: 50px;
+font-family: 'porsche-nexttt';
+font-size: 14px;
+}
+.journey-box h1{
+    color: black;
+    margin-top: 130px;
+    font-size: 60px;
+    margin-left: 87px;
+    font-family: 'porsche-nexttt';
+}
+
+.Box {
+    background-color: #FFFFFF;
+    transition: background-color 0.8s ease; 
+}
+
+.journey-box h1 {
+    color: black;
+    transition: color 0.8s ease;
+}
+
+
+.black-mode {
+    background-color: black !important;
+}
+
+.white-text h1 {
+    color: white !important;
+}
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+.card-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0) 20%, 
+        rgba(0, 0, 0, 0) 80%, 
+        rgba(0, 0, 0, 0.7) 100%
+    );
+    z-index: 2;
+}
+.card-911, .card-718, .card-taycan, .card-panamera, .card-macan, .card-cane{
+  width: 42%;
+  height: 540px;  
+  background-color: transparent;
+  margin-top: 20px;
+  border-radius: 5px;
+  object-fit: cover;
+  transition: width 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 1;
+  overflow: hidden; 
+}
+.card-911 img,.card-718 img, .card-taycan img, .card-macan img, .card-cane img, .card-panamera img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.card-overlay img{
+   
+    object-fit: contain;
+    z-index: 3;
+    position: absolute;
+    width: 95px;
+    color: white;
+    filter: brightness(0) invert(1);
+    left: 40%;
+    bottom: 40%;
+    pointer-events: none;
+}
+.overlay-font{
+    position: absolute;
+    width: 150px !important;   /* 👈 increase size here */
+    left: 50%;
+    bottom: 45%;
+    transform: translateX(-50%);
+    filter: brightness(0) invert(1);
+    z-index: 3;
+}
+.card-overlay p{
+    position: absolute; 
+    bottom: 24px;       
+    left: 20px;         
+    right: 20px;        
+    text-align: left;
+    color: white;
+    font-size: 18px;    
+    font-family: 'porsche-nexttt';
+    margin: 0;          
+    opacity: 1;
+}
+.fa-angle-right{
+    color: white;
+    position: absolute; 
+    bottom: 25px;       
+    right: 25px;        
+    color: white;
+    font-size: 24px;    
+    cursor: pointer;
+   
+}
+.type{
+    position: absolute;
+    width: 80px;
+    height:35px;
+    left: 24px;
+    bottom: 55px;
+    background-color: rgb(193, 193, 193);
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.type h6{
+    text-align: center;
+    margin: 0 !important;
+    padding: 0 !important;
+    justify-content: center;
+    align-items: center;
+     font-family: 'porsche-nexttt';
+     font-size: 17px;
+}
+.card-911 video, .pic-911, .card-718 video, .pic-718,
+.card-taycan video, .pic-taycan, .card-panamera video,
+.pic-panamera, .card-macan video, .pic-macan,
+.card-cane video, .pic-macan{
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}
+.card-911 video, .card-718 video, .card-taycan video,
+.card-panamera video, .card-cane video, .card-macan video {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.discover-section {
+    margin-top: 1800px;
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    background-color: transparent;
+    clear: both; 
+}
+
+.discover-heading {
+    color: black; 
+    font-size: 60px;
+    font-family: 'porsche-nexttt';
+    text-align: center;
+    transition: color 0.8s ease;
+}
+
+.black-mode .discover-heading {
+    color: white !important;
+}
+.footer-card-col{
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px 0;       
+    width: 100%;
+    height: 450px;
+    position: relative;    
+    z-index: 10;
+}
+.footer-card1, .footer-card2, .footer-card3{
+    width: 22%;
+    height: 230px;
+    border-radius: 7px;
+    gap: 4px;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+}
+.footer-card1 img, .footer-card2 img, .footer-card3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+.card-text{
+    position: absolute;
+    bottom: 15px;      
+    left: 15px;        
+    z-index: 2;        
+    color: white; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+     left: 0;     
+    right: 0;     
+    padding: 0 20px;
+}
+.card-text h5{
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: 'porsche-nexttt';
+    font-weight: bold;   
+}
+.card-text i{
+    margin-bottom: 10px;
+    font-size: 22px;
+    margin-right: -40px;
+    font-size: 22px;
+    margin: 0;
+    top: 0px;
+}
+.footer-card1:hover img, .footer-card2:hover img, .footer-card3:hover img{
+    transform: scale(1.1);
+}
+.footer{
+    width: 100%;
+    height: 750px;
+    background-color: #0E0E12;
+}
+.scroll i{
+    margin-left: 49%;
+    margin-top: 3%;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+.scroll h5{
+    font-family: 'porsche-nexttt';
+    color: white;
+    margin-left: 605px;
+    margin-top: 9px;
+}
+#top{
+    scroll-behavior: smooth;
+}
+.footer-row{
+    width: 100%;
+    background-color: #0E0E12;
+    height: 350px;
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    gap:27px;
+}
+.part-1, .part-2, .part-3{
+    width: 30%;
+    height: 300px;
+    background-color: #0E0E12;
+ 
+}
+.part-1 h5, .part-2 h5, .part-3 h5{
+    font-family: 'porsche-nexttt';
+    font-size: 23px;
+    color: #A8A9AA;
+    margin-left: 26px;
+}
+.part-1 a, .part-2 a, .part-3 a{
+    text-decoration: none;
+}
+.part-1 ul li, .part-2 ul li, .part-3 ul li{
+    font-family: 'porsche-nexttt';
+    color: white;
+    list-style-type: none;
+    text-align: start;
+    font-size: 20px;
+    line-height: 2;
+}
+.footer-para{
+    width: 100%;
+    height: 110px;
+    background-color: #0E0E12;
+    padding-bottom: 100px;
+}
+.footer-para{
+    justify-content: center;
+    padding-left: 6px;
+    color: #A8A9AA;
+}
+.footer-logo{
+    width: 100%;
+    height: 100px;
+    background-color: #0E0E12;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+
+}
+.footer-logo h1{
+    color: white;
+}
